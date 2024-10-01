@@ -1,9 +1,9 @@
 -- control.lua
 
 -- Handle the shortcut click event
-script.on_event(defines.events.on_lua_shortcut, function(e)
-    if e.prototype_name == "big-pink-eraser" then
-        local player = game.get_player(e.player_index)
+script.on_event(defines.events.on_lua_shortcut, function(event)
+    if event.prototype_name == "big-pink-eraser" then
+        local player = game.get_player(event.player_index)
 
         -- Clear the cursor and place the tool directly on the cursor
         if player.clear_cursor() then
@@ -13,14 +13,14 @@ script.on_event(defines.events.on_lua_shortcut, function(e)
 end)
 
 -- Handle the selection tool's area event
-script.on_event(defines.events.on_player_selected_area, function(e)
-    local player = game.get_player(e.player_index)
+script.on_event(defines.events.on_player_selected_area, function(event)
+    local player = game.get_player(event.player_index)
 
     -- Check if the player is holding the "big-pink-eraser" tool
     if player.cursor_stack and player.cursor_stack.valid_for_read and player.cursor_stack.name == "big-pink-eraser" then
         -- Use the player's surface
         local surface = player.surface
-        local entities = surface.find_entities(e.area)
+        local entities = surface.find_entities(event.area)
 
         -- Destroy non-tile entities, but skip the player character
         for _, entity in pairs(entities) do

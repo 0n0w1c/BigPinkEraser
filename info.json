@@ -1,0 +1,13 @@
+{
+    "name": "big-pink-eraser",
+    "version": "0.0.1",
+    "title": "Big Pink Eraser",
+    "author": "0n0w1c",
+    "description": "An area selection tool that destroys non-tile entities.",
+    "factorio_version": "1.1",
+    "dependencies": [
+        "base"
+    ],
+    "homepage": "",
+    "license": "MIT"
+}

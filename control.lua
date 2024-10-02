@@ -35,23 +35,18 @@ script.on_event(defines.events.on_player_selected_area, function(event)
         -- @type LuaEntity[]
         local entities = surface.find_entities(event.area)
 
-        --- Setting to exclude certain environmental entities from destruction
-        -- @type boolean
-        local exclude_environmental = settings.get_player_settings(player)["bpe-environmental-entities"].value
-
         --- Loop through all entities found in the selected area
         for _, entity in pairs(entities) do
-            -- Skip tile entities, the player character, resource entities, and enemy forces
-            if entity.type ~= "tile" and entity.name ~= "character" and entity.type ~= "resource" and
-                entity.force.name ~= "enemy" then
-                -- If environmental exclusion is enabled, skip specific entity types
-                if exclude_environmental then
-                    if entity.type ~= "decorative" and entity.type ~= "cliff" and entity.type ~= "tree" and entity.type ~= "simple-entity" then
-                        entity.destroy() -- Destroy non-excluded entities
-                    end
-                else
-                    entity.destroy() -- Destroy all non-excluded entities if the setting is disabled
-                end
+            -- Skip tile entities, the player character, resource entities, enemy forces, and environmental entities
+            if entity.force.name ~= "enemy" and
+                entity.name ~= "character" and
+                entity.type ~= "cliff" and
+                entity.type ~= "decorative" and
+                entity.type ~= "resource" and
+                entity.type ~= "simple-entity" and
+                entity.type ~= "tile" and
+                entity.type ~= "tree" then
+                entity.destroy() -- Destroy non-excluded entities
             end
         end
 

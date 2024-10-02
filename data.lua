@@ -1,10 +1,7 @@
--- data.lua
-
 data:extend({
     {
         type = "selection-tool",
         name = "big-pink-eraser",
-        --        icon = "__base__/graphics/icons/deconstruction-planner.png",
         icon = "__big-pink-eraser__/graphics/icons/big-pink-eraser.png",
         icon_size = 64,
         flags = {},
@@ -23,9 +20,8 @@ data:extend({
     {
         type = "shortcut",
         name = "big-pink-eraser",
-        action = "lua", -- Handle via Lua event using flib
+        action = "lua",
         icon = {
-            --            filename = "__base__/graphics/icons/deconstruction-planner.png",
             filename = "__big-pink-eraser__/graphics/icons/big-pink-eraser.png",
             priority = "extra-high-no-scale",
             size = 64,

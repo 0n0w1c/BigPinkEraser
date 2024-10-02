@@ -42,6 +42,7 @@ script.on_event(defines.events.on_player_selected_area, function(event)
                 entity.name ~= "character" and
                 entity.type ~= "cliff" and
                 entity.type ~= "decorative" and
+                entity.type ~= "fish" and
                 entity.type ~= "resource" and
                 entity.type ~= "simple-entity" and
                 entity.type ~= "tile" and

@@ -1,11 +1,11 @@
 {
     "name": "big-pink-eraser",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "title": "Big Pink Eraser",
     "author": "0n0w1c",
     "license": "MIT",
     "homepage": "",
-    "description": "An area selection tool that destroys non-tile entities.",
+    "description": "A selection tool that removes entities in the selected area, including those pesky invisible entities.",
     "factorio_version": "1.1",
     "dependencies": [
         "base"

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 01.10.2024
+  Bugfixes:
+    - None
+  Changes:
+    - Refactored excluded entity types to a table
+    - Refactored the removal of big pink eraser tools from player inventory
+    - Additional LuaDoc annotations
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 01.10.2024
   Bugfixes:

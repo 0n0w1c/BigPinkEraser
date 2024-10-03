@@ -20,9 +20,9 @@ script.on_event(defines.events.on_lua_shortcut, function(event)
         local player = game.get_player(event.player_index)
         if not player then return end
 
-        -- Clear the player's cursor and set the big-pink-eraser tool if successful.
+        -- Clear player cursor and set the big-pink-eraser tool.
         if player.clear_cursor() then
-            player.cursor_stack.set_stack({ name = "big-pink-eraser" }) -- Set the tool in the player's cursor
+            player.cursor_stack.set_stack({ name = "big-pink-eraser" })
         end
     end
 end)

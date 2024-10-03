@@ -3,8 +3,7 @@
 -- Shortcut adds a button to the player's UI for quickly accessing the big-pink-eraser tool.
 data:extend({
     {
-        --- Definition of the big-pink-eraser selection tool.
-        -- This tool allows the player to select any entity in the game world and perform actions on them.
+        --- This tool allows the player to select any entity in the game world and perform actions on them.
         -- @field type The type of entity being defined (selection-tool).
         -- @field name The internal name of the tool (big-pink-eraser).
         -- @field icon The file path to the tool's icon.

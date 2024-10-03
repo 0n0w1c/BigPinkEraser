@@ -16,5 +16,7 @@ Environmentally responsible, will not remove:
 * Tiles
 * Trees
 
+* Force aware
+
 ---
 Caution: The actions performed with this tool are not reversible with "Undo".

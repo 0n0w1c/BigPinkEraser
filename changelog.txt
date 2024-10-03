@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 03.10.2024
+  Bugfixes:
+    - None
+  Changes:
+    - Fairly significant refactoring 25-30%
+    - Improved handling of the tool for a more consistent user experience
+    - First attempt at multi-user compatibility
+    - Only neutral and same force entities may be removed
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 01.10.2024
   Bugfixes:

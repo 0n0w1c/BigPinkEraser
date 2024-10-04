@@ -40,7 +40,7 @@ end)
 
 --- Handles mod configuration changes (such as mod updates or settings changes).
 -- This function ensures that necessary state (like eraser_on_cursor) is reinitialized if needed.
--- It also rebuilds the eraser_on_cursor table by checking each player's current cursor stack, but only if eraser_on_cursor has been reset.
+-- Rebuilds the eraser_on_cursor table by checking each player's current cursor stack, but only if eraser_on_cursor has been reset.
 -- @param event LuaEvent The event data indicating what configuration has changed.
 script.on_configuration_changed(function(event)
     -- Check if eraser_on_cursor has been reset or lost.
@@ -83,7 +83,8 @@ end)
 
 --- Destroys certain entities within the selected area based on exclusion criteria.
 -- This event is triggered when the player selects an area using the big-pink-eraser tool.
--- The mod checks the type of each entity in the selected area, excludes entities like cliffs, resources, and the player character, and destroys all non-excluded entities.
+-- The mod checks the type of each entity in the selected area, excludes entities like cliffs, resources, and the player character,
+-- and destroys all non-excluded entities.
 -- The tool remains on the cursor after use until manually cleared by the player.
 -- @param event LuaEvent The event data containing the selected area and player index.
 script.on_event(defines.events.on_player_selected_area, function(event)

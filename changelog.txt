@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 03.10.2024
+  Bugfixes:
+    - None
+  Changes:
+    - Tool remains on player cursor until cleared, normal selection tool behavior
+---------------------------------------------------------------------------------------------------
 Version: 0.0.4
 Date: 03.10.2024
   Bugfixes:

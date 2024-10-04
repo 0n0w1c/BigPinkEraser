@@ -3,6 +3,20 @@
 -- @type table<int, boolean>
 local eraser_on_cursor = {}
 
+--- Table of entity types that are to be excluded from destruction.
+-- The keys are entity types, and the values are boolean flags indicating exclusion.
+-- @type table<string, boolean>
+local excluded_types = {
+    ["character"] = true,
+    ["cliff"] = true,
+    ["decorative"] = true,
+    ["fish"] = true,
+    ["resource"] = true,
+    ["simple-entity"] = true,
+    ["tile"] = true,
+    ["tree"] = true,
+}
+
 --- Checks if the player is holding the big-pink-eraser tool.
 -- @param player LuaPlayer The player whose cursor stack is being checked.
 -- @return boolean Returns true if the player is holding the big-pink-eraser tool, otherwise false.
@@ -11,20 +25,11 @@ local function is_player_holding_eraser(player)
 end
 
 --- Determines if an entity should be excluded from destruction.
--- This checks if the entity belongs to an excluded type or is the player character.
+-- This function checks whether the entity type exists in the excluded_types table.
 -- @param entity LuaEntity The entity to evaluate.
 -- @return boolean Returns true if the entity is excluded from destruction, otherwise false.
 local function is_entity_excluded(entity)
-    local excluded_types = {
-        ["cliff"] = true,
-        ["decorative"] = true,
-        ["fish"] = true,
-        ["resource"] = true,
-        ["simple-entity"] = true,
-        ["tile"] = true,
-        ["tree"] = true,
-    }
-    return excluded_types[entity.type] or entity.name == "character"
+    return excluded_types[entity.type] ~= nil
 end
 
 --- Initialize the mod state on game startup or mod reload.
@@ -79,6 +84,7 @@ end)
 --- Destroys certain entities within the selected area based on exclusion criteria.
 -- This event is triggered when the player selects an area using the big-pink-eraser tool.
 -- The mod checks the type of each entity in the selected area, excludes entities like cliffs, resources, and the player character, and destroys all non-excluded entities.
+-- The tool remains on the cursor after use until manually cleared by the player.
 -- @param event LuaEvent The event data containing the selected area and player index.
 script.on_event(defines.events.on_player_selected_area, function(event)
     local player = game.get_player(event.player_index)
@@ -96,19 +102,11 @@ script.on_event(defines.events.on_player_selected_area, function(event)
         force = { "neutral", "player" }
     })
 
-    local entities_destroyed = false
-
     -- Loop through all entities and destroy those that are not excluded.
     for _, entity in pairs(entities) do
         if entity.valid and not is_entity_excluded(entity) and (entity.force == player.force or entity.force.name == "neutral") then
             entity.destroy()
-            entities_destroyed = true
         end
-    end
-
-    -- Clear the player's cursor if any entities were destroyed.
-    if entities_destroyed then
-        player.cursor_stack.clear()
     end
 end)
 

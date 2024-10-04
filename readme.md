@@ -1,9 +1,9 @@
-#### Beta release!
+Beta release!
 
-A selection tool that removes entities from the selected area, including those pesky invisible entities.
+A selection tool that removes entities from the selected area, including those pesky invisible entities.  
 
-Big Pink Eraser is primarily designed for the clean-up of invisible entities caused by bugs and deactivating mods.
-Equally useful for the removal of other undesired entities, either placed or dropped.
+The Big Pink Eraser is primarily designed for cleaning up invisible entities caused by bugs or deactivated mods.  
+However, it's equally effective at removing other unwanted entities, whether placed or dropped.  
 
 Environmentally responsible, will not remove:
 
@@ -18,7 +18,7 @@ Environmentally responsible, will not remove:
 
 &NewLine;
 
-* Respects multiple forces
+* Multi-force aware
 
 ---
-Caution: The actions performed with this tool are not reversible with "Undo".
+Caution: The actions performed with this tool are not reversible with "Undo".  

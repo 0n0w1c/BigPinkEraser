@@ -18,7 +18,7 @@ Environmentally responsible, will not remove:
 
 &NewLine;
 
-* Multi-force aware
+Multi-force aware, respects force ownership
 
 ---
 Caution: The actions performed with this tool are not reversible with "Undo".  

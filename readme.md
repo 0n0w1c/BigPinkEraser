@@ -1,7 +1,7 @@
 A tool to remove entities from a selected area, including invisible entities  
 
 The Big Pink Eraser is primarily designed for cleaning up invisible entities caused by bugs or deactivated mods.  
-However, it's equally effective at removing other unwanted entities, whether placed or dropped.  
+However, it is equally effective at removing other unwanted entities, whether placed or dropped.  
 
 Environmentally responsible, will not remove:
 

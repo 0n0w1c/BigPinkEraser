@@ -83,8 +83,8 @@ end)
 
 --- Destroys certain entities within the selected area based on exclusion criteria.
 -- This event is triggered when the player selects an area using the big-pink-eraser tool.
--- The mod checks the type of each entity in the selected area, excludes entities like cliffs, resources, and the player character,
--- and destroys all non-excluded entities.
+-- The mod checks the type of each entity in the selected area, excludes entities like cliffs,
+-- resources, and the player character, and destroys all non-excluded entities.
 -- The tool remains on the cursor after use until manually cleared by the player.
 -- @param event LuaEvent The event data containing the selected area and player index.
 script.on_event(defines.events.on_player_selected_area, function(event)
@@ -105,7 +105,7 @@ script.on_event(defines.events.on_player_selected_area, function(event)
 
     -- Loop through all entities and destroy those that are not excluded.
     for _, entity in pairs(entities) do
-        if entity.valid and not is_entity_excluded(entity) and (entity.force == player.force or entity.force.name == "neutral") then
+        if entity.valid and not is_entity_excluded(entity) then
             entity.destroy()
         end
     end

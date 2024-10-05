@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 04.10.2024
+  Bugfixes:
+    - None
+  Changes:
+    - Startup setting to select the color of the shortcut button (default = gray)
+    - Startup setting to select the icon for the shortcut button (default = image)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 03.10.2024
   Bugfixes:

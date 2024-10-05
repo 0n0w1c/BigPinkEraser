@@ -3,7 +3,6 @@
 local constants = require("constants")
 
 -- Helper function to check if the given image type is allowed.
--- This function checks whether the image type exists in the allowed image types table.
 -- @param image_type string The image type to check.
 -- @return boolean Returns true if the image type is allowed, otherwise false.
 local function is_image_type_allowed(image_type)
@@ -47,7 +46,7 @@ local shortcut_style = tostring(settings.startup["big-pink-eraser-button-style"]
 if shortcut_style == constants.default_button_color then shortcut_style = "default" end
 
 -- Retrieve the startup setting for the button image type.
--- The button image can be set to HD image or one of the clip-art options.
+-- The button image can be set to "image" or one of the clip-art options.
 local button_image_type = tostring(settings.startup["big-pink-eraser-button-icon"].value)
 
 -- Use the helper function to dynamically generate the icons for the tool and shortcut.
@@ -64,7 +63,7 @@ data:extend({
         icon_size = constants.icon_size_small,
         flags = {},
         subgroup = "tool",
-        order = constants.order_tool,
+        order = constants.tool_order,
         stack_size = 1,
         selection_color = constants.pink,
         alt_selection_color = constants.pink,
@@ -87,6 +86,6 @@ data:extend({
         associated_control_input = "give-big-pink-eraser",
         style = shortcut_style,
         toggleable = false,
-        order = constants.order_shortcut,
+        order = constants.shortcut_order,
     }
 })

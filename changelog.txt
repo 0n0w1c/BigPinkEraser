@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 05.10.2024
+  Bugfixes:
+    - Corrected two constant names in data.lua (failed to find/replace)
+  Changes:
+    - LuaDoc modifications
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 05.10.2024
   Bugfixes:

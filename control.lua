@@ -1,6 +1,5 @@
 -- Require the constants.lua file to access shared constants.
 -- This includes excluded entity types and any other shared data.
--- @module constants
 local constants = require("constants")
 
 -- Local table to track when the big-pink-eraser is on the cursor for each player.
@@ -94,7 +93,7 @@ script.on_event(defines.events.on_player_selected_area, function(event)
 end)
 
 -- Removes any big-pink-eraser tools from the player's inventory when the cursor is cleared.
--- This event is triggered when the player's cursor stack changes (e.g., when the player clears the cursor).
+-- This event is triggered when the player's cursor stack changes.
 -- @param event LuaEvent The event data containing the player index.
 script.on_event(defines.events.on_player_cursor_stack_changed, function(event)
     local player = game.get_player(event.player_index)

@@ -1,7 +1,19 @@
 -- Require the constants.lua file to access shared constants.
 -- This includes the path for icons and allowed image types.
--- @module constants
 local constants = require("constants")
+
+-- Helper function to check if the given image type is allowed.
+-- This function checks whether the image type exists in the allowed image types table.
+-- @param image_type string The image type to check.
+-- @return boolean Returns true if the image type is allowed, otherwise false.
+local function is_image_type_allowed(image_type)
+    for _, v in ipairs(constants.allowed_image_types) do
+        if v == image_type then
+            return true
+        end
+    end
+    return false
+end
 
 -- Helper function to determine the appropriate icons based on the button image type.
 -- This function encapsulates the logic for setting the tool and button icons.
@@ -13,7 +25,10 @@ local function get_icons(image_type)
     local tool_icon
     local button_icon
 
-    if not image_type then image_type = constants.default_image_type end
+    -- Validate if image_type is allowed, otherwise default to constants.default_image_type
+    if not image_type or not is_image_type_allowed(image_type) then
+        image_type = constants.default_image_type
+    end
 
     if image_type == constants.default_image_type then
         tool_icon = constants.image

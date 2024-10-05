@@ -2,11 +2,20 @@
 -- This file contains allowed image types, excluded entity types, button colors, and utility functions.
 local constants = {}
 
+-- Mod name
+constants.mod_name = "big-pink-eraser"
+
 -- The mod path used to access assets like icons and graphics.
-constants.mod = "__big-pink-eraser__"
+constants.mod_path = "__" .. constants.mod_name .. "__/"
 
 -- Base path to the icons folder.
-constants.icon_path = constants.mod .. "/graphics/icons/"
+constants.icon_path = constants.mod_path .. "graphics/icons/"
+
+-- Path to the image icon
+constants.image = constants.icon_path .. "big-pink-eraser.png"
+
+-- Path to the pink clip-art icon
+constants.pink_clip_art = constants.icon_path .. "clip-art-pink.png"
 
 -- Table of allowed button colors for the Big Pink Eraser shortcut.
 constants.allowed_button_colors = { "gray", "red", "green", "blue" }
@@ -22,6 +31,18 @@ constants.default_image_type = "image"
 
 -- Forces used for filtering in entity searches.
 constants.allowed_forces = { "neutral", "player" }
+
+-- The color pink used for the selection box
+constants.pink = { r = 1, g = 0.44, b = 0.71 }
+
+-- Sort order for the selection tool
+constants.tool_order = "c[automated-construction]-a[big-pink-eraser]"
+
+-- Sort order for the shortcut
+constants.shortcut_order = "a[tools]-c[big-pink-eraser]"
+
+-- Small icon size
+constants.icon_size_small = 32
 
 -- Table of entity types that are excluded from destruction by the Big Pink Eraser tool.
 -- The keys represent entity types, and the values are boolean flags indicating exclusion.

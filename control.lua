@@ -1,5 +1,6 @@
 -- Require the constants.lua file to access shared constants.
 -- This includes excluded entity types and any other shared data.
+-- @module constants
 local constants = require("constants")
 
 -- Local table to track when the big-pink-eraser is on the cursor for each player.
@@ -12,7 +13,7 @@ local is_eraser_on_cursor = {}
 -- @param player LuaPlayer The player whose cursor stack is being checked.
 -- @return boolean Returns true if the player is holding the big-pink-eraser tool, otherwise false.
 local function is_player_holding_eraser(player)
-    return player.cursor_stack and player.cursor_stack.valid_for_read and player.cursor_stack.name == "big-pink-eraser"
+    return player.cursor_stack and player.cursor_stack.valid_for_read and player.cursor_stack.name == constants.mod_name
 end
 
 -- Determines if an entity should be excluded from destruction.
@@ -53,7 +54,7 @@ script.on_configuration_changed(function(event)
 end)
 
 -- Triggered by the shortcut event, places the big-pink-eraser tool on the player's cursor.
--- This event is triggered when the player activates the "big-pink-eraser" shortcut.
+-- This event is triggered when the player activates the big-pink-eraser shortcut.
 -- It clears the player's cursor and places the big-pink-eraser tool on it, and updates the is_eraser_on_cursor table to track this.
 -- @param event LuaEvent The event data containing the player index and prototype name.
 script.on_event(defines.events.on_lua_shortcut, function(event)
@@ -61,7 +62,7 @@ script.on_event(defines.events.on_lua_shortcut, function(event)
     if not player then return end
 
     if player.clear_cursor() then
-        player.cursor_stack.set_stack({ name = "big-pink-eraser" })
+        player.cursor_stack.set_stack({ name = constants.mod_name })
         is_eraser_on_cursor[player.index] = true
     end
 end)
@@ -100,9 +101,9 @@ script.on_event(defines.events.on_player_cursor_stack_changed, function(event)
     if not player then return end
 
     if is_eraser_on_cursor[player.index] and not player.cursor_stack.valid_for_read then
-        local count = player.get_item_count("big-pink-eraser")
+        local count = player.get_item_count(constants.mod_name)
         if count > 0 then
-            player.remove_item { name = "big-pink-eraser", count = count }
+            player.remove_item { name = constants.mod_name, count = count }
         end
         is_eraser_on_cursor[player.index] = nil
     end

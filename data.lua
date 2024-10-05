@@ -1,5 +1,6 @@
 -- Require the constants.lua file to access shared constants.
 -- This includes the path for icons and allowed image types.
+-- @module constants
 local constants = require("constants")
 
 -- Helper function to determine the appropriate icons based on the button image type.
@@ -15,10 +16,10 @@ local function get_icons(image_type)
     if not image_type then image_type = constants.default_image_type end
 
     if image_type == constants.default_image_type then
-        tool_icon = constants.icon_path .. "big-pink-eraser.png"
-        button_icon = constants.icon_path .. "big-pink-eraser.png"
+        tool_icon = constants.image
+        button_icon = tool_icon
     else
-        tool_icon = constants.icon_path .. "clip-art-pink.png"
+        tool_icon = constants.pink_clip_art
         button_icon = constants.icon_path .. image_type .. ".png"
     end
 
@@ -43,15 +44,15 @@ local tool_icon, button_icon = get_icons(button_image_type)
 data:extend({
     {
         type = "selection-tool",
-        name = "big-pink-eraser",
+        name = constants.mod_name,
         icon = tool_icon,
-        icon_size = 32,
+        icon_size = constants.icon_size_small,
         flags = {},
         subgroup = "tool",
-        order = "c[automated-construction]-a[big-pink-eraser]",
+        order = constants.order_tool,
         stack_size = 1,
-        selection_color = { r = 1, g = 0.44, b = 0.71 },
-        alt_selection_color = { r = 1, g = 0.44, b = 0.71 },
+        selection_color = constants.pink,
+        alt_selection_color = constants.pink,
         selection_mode = { "any-entity" },
         alt_selection_mode = { "any-entity" },
         selection_cursor_box_type = "not-allowed",
@@ -61,16 +62,16 @@ data:extend({
     },
     {
         type = "shortcut",
-        name = "big-pink-eraser",
+        name = constants.mod_name,
         action = "lua",
         icon = {
             filename = button_icon,
             priority = "high",
-            size = 32,
+            size = constants.icon_size_small,
         },
         associated_control_input = "give-big-pink-eraser",
         style = shortcut_style,
         toggleable = false,
-        order = "a[tools]-c[big-pink-eraser]",
+        order = constants.order_shortcut,
     }
 })

@@ -2,9 +2,9 @@
 Version: 0.1.2
 Date: 04.10.2024
   Bugfixes:
-    - Added an on_load event handler to sync cursor tracking if game saved while the tool is active
-  Changes:
     - None
+  Changes:
+    - Refactored
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 04.10.2024

@@ -7,6 +7,8 @@ local function get_icons(image_type)
     local tool_icon
     local button_icon
 
+    if not image_type then image_type = "image" end
+
     if image_type == "image" then
         tool_icon = "__big-pink-eraser__/graphics/icons/big-pink-eraser.png"
         button_icon = "__big-pink-eraser__/graphics/icons/big-pink-eraser.png"

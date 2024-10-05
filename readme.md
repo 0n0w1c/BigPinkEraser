@@ -16,7 +16,9 @@ Environmentally responsible, will not remove:
 
 &NewLine;
 
-Multi-force aware, respects force ownership
+Startup settings to modify the style of the shortcut button and tool (image or clip art)  
+
+Multi-player: multi-force aware, respects force ownership  
 
 ---
 Caution: The actions performed with this tool are not reversible with "Undo".  

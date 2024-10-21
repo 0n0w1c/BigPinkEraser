@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 21.10.2024
+  Issues:
+  Bugfixes:
+    - NOT FIXED: neutral entities do not appear as selected but will be removed (ex. crash site)
+    - Removed a union flag, did not contribute
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 21.10.2024
   Bugfixes:

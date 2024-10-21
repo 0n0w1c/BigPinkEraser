@@ -72,14 +72,14 @@ data:extend({
         select = {
             border_color = constants.pink,
             cursor_box_type = "not-allowed",
-            mode = { "deconstruct", "any-entity", "items", "same-force" },
+            mode = { "deconstruct", "any-entity", "items" },
             entity_filter_mode = "blacklist",
             entity_type_filters = constants.excluded_types_list
         },
         alt_select = {
             border_color = constants.pink,
             cursor_box_type = "not-allowed",
-            mode = { "deconstruct", "any-entity", "items", "same-force" },
+            mode = { "deconstruct", "any-entity", "items" },
             entity_filter_mode = "blacklist",
             entity_type_filters = constants.excluded_types_list
         }

@@ -71,15 +71,17 @@ data:extend({
         stack_size = 1,
         select = {
             border_color = constants.pink,
-            cursor_box_type = "entity",
-            mode = "any-entity",
-            entity_filter_mode = "whitelist"
+            cursor_box_type = "not-allowed",
+            mode = { "deconstruct", "any-entity", "items", "same-force" },
+            entity_filter_mode = "blacklist",
+            entity_type_filters = constants.excluded_types_list
         },
         alt_select = {
             border_color = constants.pink,
-            cursor_box_type = "entity",
-            mode = "any-entity",
-            entity_filter_mode = "whitelist"
+            cursor_box_type = "not-allowed",
+            mode = { "deconstruct", "any-entity", "items", "same-force" },
+            entity_filter_mode = "blacklist",
+            entity_type_filters = constants.excluded_types_list
         }
     },
     {

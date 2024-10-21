@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 21.10.2024
+  Bugfixes:
+    - None
+  Changes:
+    - Improved selection filtering, only entities that will be removed are selected
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 21.10.2024
   Bugfixes:

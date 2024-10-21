@@ -11,11 +11,11 @@ local function is_player_holding_eraser(player)
 end
 
 -- Determines if an entity should be excluded from destruction.
--- This function checks whether the entity type exists in the excluded_types table defined in constants.lua.
+-- This function checks whether the entity type exists in the excluded_types_table table defined in constants.lua.
 -- @param entity LuaEntity The entity to evaluate.
 -- @return boolean Returns true if the entity is excluded from destruction, otherwise false.
 local function is_entity_excluded(entity)
-    return constants.excluded_types[entity.type] ~= nil
+    return constants.excluded_types_table[entity.type] ~= nil
 end
 
 -- Triggered by the shortcut event, places the big-pink-eraser tool on the player's cursor.

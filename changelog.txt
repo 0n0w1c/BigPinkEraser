@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 21.10.2024
+  Issues:
+  Bugfixes:
+    - Neutral entities not appearing as selected, removed "deconstruct" from the select mode
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 21.10.2024
   Issues:

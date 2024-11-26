@@ -1,7 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 26.11.2024
+  Bugfixes:
+    - Restrict the shortcut to trigger only on the Big Pink Eraser shortcut activation
+  Changes:
+    - Added multi-player startup setting to restrict use to admins only (default: false)
+---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: 21.10.2024
-  Issues:
   Bugfixes:
     - Neutral entities not appearing as selected, removed "deconstruct" from the select mode
   Changes:
@@ -9,7 +15,6 @@ Date: 21.10.2024
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 21.10.2024
-  Issues:
   Bugfixes:
     - NOT FIXED: neutral entities do not appear as selected but will be removed (ex. crash site)
     - Removed a union flag, did not contribute

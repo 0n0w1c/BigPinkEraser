@@ -18,7 +18,7 @@ Environmentally responsible, will not remove:
 
 Startup settings to modify the style of the shortcut button and tool (image or clip art)  
 
-Multi-player: multi-force aware, respects force ownership  
+Multi-player: multi-force aware, respects force ownership, can be restricted to Admins Only  
 
 ---
 Caution: The actions performed with this tool are not reversible with "Undo".  

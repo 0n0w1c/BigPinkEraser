@@ -1,22 +1,20 @@
 local constants = require("constants")
 
-local function get_icons(image_type)
-    local button_icon
+local function get_icon()
+    local image_type = tostring(settings.startup["big-pink-eraser-button-icon"].value)
+    local icon
 
     if image_type == "image" then
-        button_icon = constants.icon_path .. "big-pink-eraser.png"
+        icon = constants.icon_path .. "big-pink-eraser.png"
     else
-        button_icon = constants.icon_path .. "clip-art-tool.png"
+        icon = constants.icon_path .. image_type .. ".png"
     end
 
-    return button_icon
+    return icon
 end
 
 local shortcut_style = tostring(settings.startup["big-pink-eraser-button-style"].value)
 if shortcut_style == constants.default_button_color then shortcut_style = "default" end
-
-local button_image_type = tostring(settings.startup["big-pink-eraser-button-icon"].value)
-local button_icon = get_icons(button_image_type)
 
 data:extend({
     {
@@ -50,10 +48,10 @@ data:extend({
         type = "shortcut",
         name = constants.mod_name,
         action = "lua",
-        icon = button_icon,
-        icon_size = 32,
-        small_icon = button_icon,
-        small_icon_size = 32,
+        icon = get_icon(),
+        icon_size = constants.icon_size_small,
+        small_icon = get_icon(),
+        small_icon_size = constants.icon_size_small,
         associated_control_input = "give-big-pink-eraser",
         style = shortcut_style,
         toggleable = false,

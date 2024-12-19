@@ -12,9 +12,6 @@ constants.mod_path = "__" .. constants.mod_name .. "__/"
 constants.icon_path = constants.mod_path .. "graphics/icons/"
 
 -- Path to the image icon
-constants.image = constants.icon_path .. "big-pink-eraser.png"
-
--- Path to the image icon
 constants.tool = constants.icon_path .. "clip-art-tool.png"
 
 -- Table of allowed button colors for the Big Pink Eraser shortcut

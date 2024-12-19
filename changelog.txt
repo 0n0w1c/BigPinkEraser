@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.5
+Date: 19.12.2024
+  Bugfixes:
+    - None
+  Changes:
+    - Pink clip-art added as an option to the startup setting Shortcut Icon Style
+    - Tool is now white clip-art on black background, to be more "standard"
+---------------------------------------------------------------------------------------------------
 Version: 0.2.4
 Date: 26.11.2024
   Bugfixes:

@@ -16,7 +16,7 @@ Environmentally responsible, will not remove:
 
 &NewLine;
 
-Startup settings to modify the style of the shortcut button and tool (image or clip art)  
+Startup settings to modify the style of the shortcut button (image or clip art)  
 
 Multi-player: multi-force aware, respects force ownership, can be restricted to Admins Only  
 

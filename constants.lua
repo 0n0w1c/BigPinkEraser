@@ -14,8 +14,8 @@ constants.icon_path = constants.mod_path .. "graphics/icons/"
 -- Path to the image icon
 constants.image = constants.icon_path .. "big-pink-eraser.png"
 
--- Path to the pink clip-art icon
-constants.pink_clip_art = constants.icon_path .. "clip-art-pink.png"
+-- Path to the image icon
+constants.tool = constants.icon_path .. "clip-art-tool.png"
 
 -- Table of allowed button colors for the Big Pink Eraser shortcut
 constants.allowed_button_colors = { "gray", "red", "green", "blue" }
@@ -24,16 +24,16 @@ constants.allowed_button_colors = { "gray", "red", "green", "blue" }
 constants.default_button_color = "gray"
 
 -- Table of allowed image types for the Big Pink Eraser tool
-constants.allowed_image_types = { "image", "clip-art-white", "clip-art-black" }
+constants.allowed_image_types = { "image", "clip-art-pink", "clip-art-white", "clip-art-black" }
 
 -- Default image type for the Big Pink Eraser tool
-constants.default_image_type = "image"
+constants.default_image_type = "clip-art-black"
 
 -- Forces used for filtering in entity searches
 constants.allowed_forces = { "neutral", "player" }
 
--- The color pink used for the selection box
-constants.pink = { r = 1, g = 0.44, b = 0.71 }
+-- The color used for the selection box
+constants.white = { r = 1, g = 1, b = 1, a = 1 }
 
 -- Sort order for the selection tool
 constants.tool_order = "c[automated-construction]-a[big-pink-eraser]"

@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.7
+Date: 19.12.2024
+  Bugfixes:
+    - Reduced the tool icon size from 32x32 to 24x24, accepting the convention
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.2.6
 Date: 19.12.2024
   Bugfixes:
@@ -12,7 +19,7 @@ Date: 19.12.2024
     - None
   Changes:
     - Pink clip-art added as an option to the startup setting Shortcut Icon Style
-    - Tool is now white clip-art on black background, to be more "standard"
+    - Tool is now white clip-art on black background, accepting the convention
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.4
 Date: 26.11.2024

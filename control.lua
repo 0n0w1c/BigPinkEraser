@@ -59,7 +59,7 @@ script.on_event(defines.events.on_player_selected_area, function(event)
 
     for _, entity in pairs(entities) do
         if entity.valid and not is_entity_excluded(entity) then
-            entity.destroy()
+            entity.destroy({ raise_destroy = true })
         end
     end
 end)

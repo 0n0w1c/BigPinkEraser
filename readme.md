@@ -22,3 +22,6 @@ Multi-player: multi-force aware, respects force ownership, can be restricted to 
 
 ---
 Caution: The actions performed with this tool are not reversible with "Undo".  
+
+#### Alternate locales:  
+`cs`, `de`, `es`, `fr`, `it`, `ja`, `pl`, `pt-BR`, `ru`, `tr`, `uk`, `zh-CN`, `zh-TW`

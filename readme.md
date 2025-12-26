@@ -6,7 +6,7 @@ The Big Pink Eraser is primarily designed for cleaning up invisible entities cau
 
 ---
 
-### Selection Modes:
+### Selection Modes
 
 * **Standard Mode** *[Left-Click]*
 

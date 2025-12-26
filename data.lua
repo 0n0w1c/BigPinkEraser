@@ -14,14 +14,18 @@ local function get_icon()
 end
 
 local shortcut_style = tostring(settings.startup["big-pink-eraser-button-style"].value)
-if shortcut_style == constants.default_button_color then shortcut_style = "default" end
+if shortcut_style == constants.default_button_color then
+    shortcut_style = "default"
+end
+
+local current_icon = get_icon()
 
 data:extend({
     {
         type = "selection-tool",
         name = constants.mod_name,
-        icon = constants.tool_icon,
-        icon_size = constants.icon_size_small,
+        icon = current_icon,
+        icon_size = constants.icon_size,
         flags = { "only-in-cursor", "spawnable", "not-stackable" },
         hidden_in_factoriopedia = true,
         hidden = true,
@@ -48,9 +52,9 @@ data:extend({
         type = "shortcut",
         name = constants.mod_name,
         action = "lua",
-        icon = get_icon(),
+        icon = current_icon,
         icon_size = constants.icon_size,
-        small_icon = get_icon(),
+        small_icon = current_icon,
         small_icon_size = constants.icon_size,
         associated_control_input = "give-big-pink-eraser",
         style = shortcut_style,

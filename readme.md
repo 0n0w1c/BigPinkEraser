@@ -21,4 +21,4 @@ The Big Pink Eraser is primarily designed for cleaning up invisible entities cau
 ---
 
 #### Alternate locales:  
-`cs`, `de`, `es`, `fr`, `it`, `ja`, `pl`, `pt-BR`, `ru`, `tr`, `uk`, `zh-CN`, `zh-TW` (translations supplied by Google Gemini)
+`cs`, `de`, `es`, `fr`, `it`, `ja`, `pl`, `pt-BR`, `ru`, `tr`, `uk`, `zh-CN`, `zh-TW` (translations by Google Gemini)

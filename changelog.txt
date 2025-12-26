@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 26.12.2025
+  Bugfixes:
+    - Refactored
+    - Cursor selection tool was not set to the shortcut style
+  Changes:
+    - Multiplayer: Force is ignored as a filter for admins only when using alt-mode
+    - Updated alternate locales (Google Gemini)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 26.12.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Multiplayer: Force is ignored as a filter for admins
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 25.12.2025
   Bugfixes:

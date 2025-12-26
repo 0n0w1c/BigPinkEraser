@@ -4,30 +4,35 @@ A tool to remove entities from a selected area, including invisible entities.
 
 The Big Pink Eraser is primarily designed for cleaning up invisible entities caused by bugs or deactivated mods. However, it is equally effective at deleting other unwanted entities and items.
 
-### Selection Modes
+---
+
+### Selection Modes:
 
 * **Standard Mode** *[Left-Click]*
 
-Environmentally responsible, will not delete:
-
-    Biters, spitters, worms or nests
-    Cliffs
-    Fish
-    Ground decoratives
-    Resources
-    Rocks
-    Tiles
-    Trees
+    Environmentally responsible, will not delete:
+        *Biters, spitters, worms or nests*
+        *Cliffs*
+        *Fish*
+        *Ground decoratives*
+        *Resources*
+        *Rocks*
+        *Tiles*
+        *Trees*
 
 * **Alternate Mode** *[Shift + Left-Click]*
 
-Deletes specifically what standard mode ignores.
+    Deletes specifically what standard mode ignores.
 
 ---
 
 ### Features
-* **Startup Settings:** Customize the shortcut button (button color and image or clip art style).
-* **Multi-player:** Multi-force aware, respects force ownership, and can be restricted to **Admins Only** via startup settings.
+* **Startup Settings:**
+    Enable alternate mode
+    Customize the shortcut button (button color and image or clip art style)
+* **Multi-player:**
+    Multi-force aware, respects force ownership
+    Can be restricted to **Admins Only** via startup settings
 
 ---
 

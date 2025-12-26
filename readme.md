@@ -11,14 +11,14 @@ The Big Pink Eraser is primarily designed for cleaning up invisible entities cau
 * **Standard Mode** *[Left-Click]*
 
     Environmentally responsible, will not delete:
-        *Biters, spitters, worms or nests*
-        *Cliffs*
-        *Fish*
-        *Ground decoratives*
-        *Resources*
-        *Rocks*
-        *Tiles*
-        *Trees*
+        *Biters, spitters, worms or nests*  
+        *Cliffs*  
+        *Fish*  
+        *Ground decoratives*  
+        *Resources*  
+        *Rocks*  
+        *Tiles*  
+        *Trees*  
 
 * **Alternate Mode** (optional) *[Shift + Left-Click]*
 

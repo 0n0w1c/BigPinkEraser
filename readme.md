@@ -27,10 +27,10 @@ The Big Pink Eraser is primarily designed for cleaning up invisible entities cau
 ---
 
 ### Features
-* **Startup Settings:**
+* **Startup Settings:**  
     Enable alternate mode  
     Customize the shortcut button (button color and image or clip art style)
-* **Multi-player:**
+* **Multi-player:**  
     Multi-force aware, respects force ownership  
     Can be restricted to **Admins Only** via startup settings
 

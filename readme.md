@@ -20,7 +20,7 @@ The Big Pink Eraser is primarily designed for cleaning up invisible entities cau
         *Tiles*
         *Trees*
 
-* **Alternate Mode** *[Shift + Left-Click]*
+* **Alternate Mode** (optional) *[Shift + Left-Click]*
 
     Deletes specifically what standard mode ignores (except tiles).
 

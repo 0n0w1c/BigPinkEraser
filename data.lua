@@ -30,18 +30,18 @@ data:extend({
         order = constants.tool_order,
         stack_size = 1,
         select = {
-            border_color = constants.white,
+            border_color = constants.pink,
             cursor_box_type = "not-allowed",
             mode = { "any-entity", "items" },
             entity_filter_mode = "blacklist",
             entity_type_filters = constants.excluded_types_list
         },
         alt_select = {
-            border_color = constants.white,
+            border_color = constants.red,
             cursor_box_type = "not-allowed",
             mode = { "any-entity", "items" },
             entity_filter_mode = "blacklist",
-            entity_type_filters = constants.excluded_types_list
+            entity_type_filters = {}
         }
     },
     {

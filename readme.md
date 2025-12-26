@@ -1,27 +1,24 @@
-A tool to remove entities from a selected area, including invisible entities  
+# Big Pink Eraser
 
-The Big Pink Eraser is primarily designed for cleaning up invisible entities caused by bugs or deactivated mods.  
-However, it is equally effective at removing other unwanted entities, whether placed or dropped.  
+A tool to remove entities from a selected area, including invisible entities.
 
-Environmentally responsible, will not remove:
+The Big Pink Eraser is primarily designed for cleaning up invisible entities caused by bugs or deactivated mods. However, it is equally effective at deleting other unwanted entities and items (ignores placed tiles).
 
-* Biters, spitters, worms or nests
-* Cliffs
-* Fish
-* Ground decoratives
-* Resources
-* Rocks
-* Tiles
-* Trees
+### Selection Modes
 
-&NewLine;
+* **Standard Mode (Left-Click):** Deletes buildings, items, ghosts, and invisible entities while preserving the natural landscape.
 
-Startup settings to modify the style of the shortcut button (image or clip art)  
-
-Multi-player: multi-force aware, respects force ownership, can be restricted to Admins Only  
+* **Alternate Mode (Shift + Left-Click):** Deletes what the standard mode ignores: trees, rocks, cliffs, biters, nests, and ground decoratives.
 
 ---
-Caution: The actions performed with this tool are not reversible with "Undo".  
+
+### Features
+* **Startup Settings:** Customize the shortcut button (button color and image or clip art style).
+* **Multi-player:** Multi-force aware, respects force ownership, and can be restricted to **Admins Only** via startup settings.
+
+**Caution:** The actions performed with this tool are **not reversible** with "Undo." Use with care!
+
+---
 
 #### Alternate locales:  
-`cs`, `de`, `es`, `fr`, `it`, `ja`, `pl`, `pt-BR`, `ru`, `tr`, `uk`, `zh-CN`, `zh-TW`
+`cs`, `de`, `es`, `fr`, `it`, `ja`, `pl`, `pt-BR`, `ru`, `tr`, `uk`, `zh-CN`, `zh-TW` (all supplied by Google Gemini)

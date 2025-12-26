@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 25.12.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Added startup setting to enable Alternate Mode (deletes what standard mode will not)
+---------------------------------------------------------------------------------------------------
 Version: 0.2.9
 Date: 01.06.2025
   Bugfixes:

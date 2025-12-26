@@ -10,11 +10,13 @@ constants.allowed_button_colors = { "gray", "red", "green", "blue" }
 constants.default_button_color = "gray"
 constants.allowed_image_types = { "image", "clip-art-pink", "clip-art-white", "clip-art-black" }
 constants.default_image_type = "clip-art-black"
-constants.allowed_forces = { "neutral", "player" }
 constants.white = { r = 1, g = 1, b = 1, a = 1 }
+constants.red = { r = 1, g = 0, b = 0, a = 1 }
+constants.pink = { r = 1, g = 0.75, b = 0.79, a = 1 }
 constants.tool_order = "c[automated-construction]-a[big-pink-eraser]"
 constants.shortcut_order = "a[tools]-c[big-pink-eraser]"
-constants.excluded_types_list = { "character", "cliff", "decorative", "fish", "resource", "simple-entity", "tile", "tree" }
+constants.excluded_types_list = { "character", "cliff", "decorative", "fish", "resource", "simple-entity", "tile", "tree",
+    "unit-spawner", "turret", "unit" }
 
 local function create_excluded_types_table()
     local excluded_types_table = {}

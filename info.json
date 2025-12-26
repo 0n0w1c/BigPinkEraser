@@ -5,7 +5,7 @@
     "author": "0n0w1c",
     "license": "MIT",
     "homepage": "https://mods.factorio.com/mod/big-pink-eraser",
-    "description": "A selection tool that removes entities in the selected area, including invisible entities.",
+    "description": "A selection tool that deletes entities in the selected area, including invisible entities.",
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0"

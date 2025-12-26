@@ -6,15 +6,30 @@ The Big Pink Eraser is primarily designed for cleaning up invisible entities cau
 
 ### Selection Modes
 
-* **Standard Mode (Left-Click):** Deletes buildings, items, ghosts, and invisible entities while preserving the natural landscape.
+* **Standard Mode** *[Left-Click]*
 
-* **Alternate Mode (Shift + Left-Click):** Deletes what the standard mode ignores: trees, rocks, cliffs, biters, nests, and ground decoratives.
+Environmentally responsible, will not delete:
+
+    Biters, spitters, worms or nests
+    Cliffs
+    Fish
+    Ground decoratives
+    Resources
+    Rocks
+    Tiles
+    Trees
+
+* **Alternate Mode** *[Shift + Left-Click]*
+
+Deletes specifically what standard mode ignores.
 
 ---
 
 ### Features
 * **Startup Settings:** Customize the shortcut button (button color and image or clip art style).
 * **Multi-player:** Multi-force aware, respects force ownership, and can be restricted to **Admins Only** via startup settings.
+
+---
 
 **Caution:** The actions performed with this tool are **not reversible** with "Undo." Use with care!
 
